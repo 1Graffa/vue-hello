@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Vue Hello</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main id="messaggio">
+      <h1 v-model="messaggio" >{{message}}</h1>
+      <img :src="foto" :alt="nomePhoto" :class="classImg">
+    </main>
+
+    <script src="js/script.js" charset="utf-8"></script>
+</body>
+</html>
