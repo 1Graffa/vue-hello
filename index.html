@@ -9,8 +9,12 @@
 </head>
 <body>
     <main id="messaggio">
-      <h1 v-model="messaggio" >{{message}}</h1>
-      <img :src="foto" :alt="nomePhoto" :class="classImg">
+      <h1 v-model="messaggio">{{message}}</h1>
+      <div class="box">
+        <img :src="gif" :alt="nomePhoto" :class="classImg">
+      </div>
+      <button
+       @click="changeImg">cambia immagine</button>
     </main>
 
     <script src="js/script.js" charset="utf-8"></script>
